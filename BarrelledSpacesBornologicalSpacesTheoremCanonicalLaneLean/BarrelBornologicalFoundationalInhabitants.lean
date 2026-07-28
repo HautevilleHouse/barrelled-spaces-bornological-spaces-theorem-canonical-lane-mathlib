@@ -1,0 +1,32 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.BarrelStructure
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.BornologicalStructure
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.BarrelBornologicalBoundedness
+
+namespace HautevilleHouse
+namespace BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean
+
+structure BarrelFoundationalInhabitants where
+  barrelPackage : BarrelPackage
+  barrelEvidence : BarrelEvidence barrelPackage
+  barrelClosed : BarrelClosed barrelPackage := barrel_closed_from_evidence barrelPackage barrelEvidence
+
+structure BornologicalFoundationalInhabitants where
+  bornologicalPackage : BornologicalPackage
+  bornologicalEvidence : BornologicalEvidence bornologicalPackage
+  bornologicalClosed : BornologicalClosed bornologicalPackage := bornological_closed_from_evidence bornologicalPackage bornologicalEvidence
+
+structure BoundedSetFoundationalInhabitants where
+  boundedSetPackage : BoundedSetPackage
+  boundedSetEvidence : BoundedSetEvidence boundedSetPackage
+  boundedSetClosed : BoundedSetClosed boundedSetPackage := bounded_set_closed_from_evidence boundedSetPackage boundedSetEvidence
+
+structure FoundationalTheoremInhabitants where
+  barrel : BarrelFoundationalInhabitants
+  bornological : BornologicalFoundationalInhabitants
+  boundedSet : BoundedSetFoundationalInhabitants
+  barrelledImpliesBornological : Prop
+  metrizableImpliesBornological : Prop
+
+end BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean
+end HautevilleHouse

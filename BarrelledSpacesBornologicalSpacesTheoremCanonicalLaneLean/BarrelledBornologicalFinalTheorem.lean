@@ -1,0 +1,17 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.AdmissibleClass
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.BarrelledBornologicalBridge
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.BarrelledBornologicalGate
+
+namespace HautevilleHouse
+namespace BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean
+
+def ConstrainedBarrelledBornologicalClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_barrelled_bornological_endgame (A : AdmissibleClass) :
+    ConstrainedBarrelledBornologicalClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean
+end HautevilleHouse

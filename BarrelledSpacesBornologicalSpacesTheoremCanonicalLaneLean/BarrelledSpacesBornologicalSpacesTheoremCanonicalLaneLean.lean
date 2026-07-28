@@ -1,0 +1,19 @@
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.BarrelStructure
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.BornologicalStructure
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.BarrelBornologicalBoundedness
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.BarrelBornologicalFoundationalInhabitants
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.BarrelBornologicalRoute
+import HautevilleHouse.BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean.BarrelBornologicalDeepConstruction
+
+namespace HautevilleHouse
+namespace BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean
+
+def ConstrainedBarrelBornologicalClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_barrel_bornological_endgame (A : AdmissibleClass) :
+    ConstrainedBarrelBornologicalClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end BarrelledSpacesBornologicalSpacesTheoremCanonicalLaneLean
+end HautevilleHouse
